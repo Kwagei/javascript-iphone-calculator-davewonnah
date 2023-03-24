@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-caculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator_iphone">
+        <!-- screen display  -->
+
+            <div class="calculator_input_display">
+                <textarea id="calculator_input_number_previews" cols="40" rows="7"></textarea>
+                <input type="text" id="calculator_input_Number">
+            </div>
+            
+            <!-- calculator button -->
+
+            <div class="calculator_button">
+                <!-- left button -->
+                <div class="calculator_button_left3">
+                    <div class="calculator_button_left_3_top">
+                        <div class="calculator_button_fixedSize_Top" id="calculator_input_AC">AC</div>
+                        <div class="calculator_button_fixedSize_Top" onclick="display('')">Del</div>
+                        <div class="calculator_button_fixedSize_Top">%</div>
+                    </div>
+
+                    <!-- middle button -->
+                    <div class="calculator_button_left_number">
+                        <div class="calculator_button_Fixedsize_Number" onclick="display('9')">9</div>
+                        <div class="calculator_button_Fixedsize_Number" onclick="display('8')">8</div>
+                        <div class="calculator_button_Fixedsize_Number" onclick="display('7')">7</div>
+
+                        <div class="calculator_button_Fixedsize_Number" onclick="display('6')">6</div>
+                        <div class="calculator_button_Fixedsize_Number" onclick="display('5')">5</div>
+                        <div class="calculator_button_Fixedsize_Number" onclick="display('4')">4</div>
+
+                        <div class="calculator_button_Fixedsize_Number" onclick="display('3')">3</div>
+                        <div class="calculator_button_Fixedsize_Number" onclick="display('2')">2</div>
+                        <div class="calculator_button_Fixedsize_Number" onclick="display('1')">1</div>
+                    </div>
+
+                    <!--buttom button left -->
+                    <div class="calculator_button_left3_buttom">
+                        <div class="calculator_button_FixedSize_bottom" id="calculator_button_FixedSize_bottom_zero" onclick="display('0')">0</div>
+                        <div class="calculator_button_FixedSize_bottom" onclick="display('.')">.</div>
+                    </div>
+                </div>
+
+                <!-- right button -->
+
+                <div class="calculator_button_right">
+                    <div class="calculator_button_FixedSize_orange" onclick="display('/')">÷</div>
+                    <div class="calculator_button_FixedSize_orange" onclick="display('*')">×</div>
+                    <div class="calculator_button_FixedSize_orange" onclick="display('-')">-</div>
+                    <div class="calculator_button_FixedSize_orange" onclick="display('+')">+</div>
+                    <!-- answer button -->
+                    <div class="calculator_button_FixedSize_orange" onclick="displaySolve('')">=</div>
+                </div>
+            </div>
+            <div class="switch" id="themeColor">
+                <p>Switch Theme</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="keyboard">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>AC</button>
+        <button>+</button>
+        <button>-</button>
+        <button>/</button>
+        <button>*</button>
+        <button>=</button>
+    </div> -->
+
+    <script src="calculator.js"></script>
+    
+</body>
+</html>
