@@ -9,8 +9,6 @@ let calculator_input_number_previews_V = document.getElementById('calculator_inp
 
 let calculator_input_AC_V = document.getElementById('calculator_input_AC');
 
-let calculator_switch_theme = document.getElementsByClassName('switch');
-
 let DisplayValue;
 
 function display(DisplayValue){
@@ -34,9 +32,10 @@ function displaySolve(){
     calculator_input_Number_V.value=y;
 }
 
+// switch theme section
 
+const modes = () =>{
+    body.calculator_iphone.switch('white')
+}
 
-
-
-
-
+switch_bgColor.addEventListener('click',modes)
