@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="calculator-container">
-        <div class="calculator_iphone">
+        <div class="calculator_iphone" id="calculator_container">
         <!-- screen display  -->
 
             <div class="calculator_input_display">
@@ -24,7 +24,7 @@
                 <div class="calculator_button_left3">
                     <div class="calculator_button_left_3_top">
                         <div class="calculator_button_fixedSize_Top" id="calculator_input_AC">AC</div>
-                        <div class="calculator_button_fixedSize_Top" onclick="display('')">Del</div>
+                        <div class="calculator_button_fixedSize_Top" onclick="deleteDigit()">Del</div>
                         <div class="calculator_button_fixedSize_Top">%</div>
                     </div>
 
@@ -58,33 +58,16 @@
                     <div class="calculator_button_FixedSize_orange" onclick="display('-')">-</div>
                     <div class="calculator_button_FixedSize_orange" onclick="display('+')">+</div>
                     <!-- answer button -->
-                    <div class="calculator_button_FixedSize_orange" onclick="displaySolve('')">=</div>
+                    <div class="calculator_button_FixedSize_orange" id="delete" onclick="displaySolve('')">=</div>
                 </div>
             </div>
-            <div class="switch">
+            <div class="switch" id="switch" onclick="changeTheme()">
                 <p>Switch Theme</p>
             </div>
         </div>
     </div>
 
-    <!-- <div class="keyboard">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>AC</button>
-        <button>+</button>
-        <button>-</button>
-        <button>/</button>
-        <button>*</button>
-        <button>=</button>
-    </div> -->
-
+   
     <script src="calculator.js"></script>
     
 </body>
