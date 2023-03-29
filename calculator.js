@@ -9,11 +9,11 @@ let calculator_input_number_previews_V = document.getElementById('calculator_inp
 
 let calculator_input_AC_V = document.getElementById('calculator_input_AC');
 
-let newValue = document.getElementById('delete')
+let newValue = document.getElementById('delete');
 
-let switch_btn = document.getElementById('switch-btn')
+let switch_btn = document.getElementById('switch-btn');
 
-let calculator_container = document.getElementById('calculator_container')
+let calculator_container = document.getElementById('calculator_container');
 
 let DisplayValue;
 
@@ -47,8 +47,12 @@ function deleteDigit() {
 // switch theme
 
 function changeTheme(){
-    calculator_container.style.backgroundColor = '#242';
-    calculator_input_Number_V.style.backgroundColor = '#242';
-    calculator_input_number_previews_V.style.backgroundColor = '#242';
+    
 }
+
+function changeTheme() {
+    let element = document.body;
+    element.classList.toggle("mode");
+    calculator_container.classList.toggle("green-mode");
+  }
 

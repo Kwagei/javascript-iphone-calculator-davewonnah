@@ -28,7 +28,7 @@ body{
     width: 275px;
     height: 100%;
     outline: none;
-    background-color: #000;
+    background-color: rgb(52, 51, 51);
     border: none;
     color: #fff;
     font-size: 20px;
@@ -44,7 +44,7 @@ body{
     width: 275px;
     height: 100%;
     outline: none;
-    background-color: #000;
+    background-color: rgb(52, 51, 51);
     border: none;
     font-size: 40px;
     color: #fff;
@@ -136,3 +136,18 @@ flex-direction: column;
     font-size: 22px;
 }
 
+.mode{
+    background-color: #fff;
+}
+
+.green-mode{
+    background-color: #242;
+}
+.green-mode1{
+    background-color: #242;
+}
+
+.calculator_input_display{
+    background-color: rgb(52, 51, 51);
+    border-radius: 5px;
+}
