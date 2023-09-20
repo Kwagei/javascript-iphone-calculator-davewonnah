@@ -46,10 +46,6 @@ function deleteDigit() {
   
 // switch theme
 
-function changeTheme(){
-    
-}
-
 function changeTheme() {
     let element = document.body;
     element.classList.toggle("mode");
